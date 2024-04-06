@@ -27,5 +27,6 @@ clean:
 run: $(TARGET)
 	./$(TARGET) ./tests/in1.dc > ./tests/out1.txt
 	diff ./tests/out1.txt ./tests/ex1.txt
-
+	./$(TARGET) ./tests/in2.dc > ./tests/out2.txt
+	diff ./tests/out2.txt ./tests/ex2.txt
 
